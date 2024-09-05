@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health and Wellness</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            padding: 0.5rem;
+        }
+        nav a {
+            color: #fff;
+            padding: 15px 25px;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .hero {
+            background: url('E.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 3rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            position: relative;
+            background-color: rgba(0, 0, 0, 0.3); /* Optional overlay */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+        }
+        .section {
+            display: flex;
+            align-items: center;
+            margin-bottom: 2rem;
+            background: #fff;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            flex-direction: row; /* Default layout: image on left, content on right */
+        }
+        .section:nth-of-type(even) {
+            flex-direction: row-reverse; /* For even sections: image on right, content on left */
+        }
+        .section img {
+            width: 45%;
+            border-radius: 8px;
+            margin-right: 2rem;
+        }
+        .section:nth-of-type(even) img {
+            margin-right: 0;
+            margin-left: 2rem;
+        }
+        .section-content {
+            width: 55%;
+        }
+        .section h2 {
+            color: #4CAF50;
+            margin-top: 0;
+            font-size: 1.8rem;
+        }
+        .section p {
+            font-size: 1rem;
+            color: #666;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 12px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1.5rem;
+            position: relative;
+            box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .footer-links {
+            margin-top: 1rem;
+        }
+        .footer-links a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 768px) {
+            .section {
+                flex-direction: column;
+                text-align: center;
+            }
+            .section img {
+                width: 80%;
+                margin: 0 0 1rem 0;
+            }
+            .section-content {
+                width: 100%;
+                padding: 0;
+            }
+            nav {
+                flex-direction: column;
+            }
+            nav a {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="articles.html">Articles</a>
+        <a href="consultations.html">Consultations</a>
+        <a href="shop.html">Shop</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Welcome to Health and Wellness</h2>
+                <p>Empowering you with the knowledge and tools for a healthier life.</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <img src="A.jpg" alt="Health Tips">
+            <div class="section-content">
+                <h2>Health Tips</h2>
+                <p>Explore expert-recommended tips to boost your overall well-being. Learn about nutrition, exercise, and lifestyle changes.</p>
+                <a href="articles.html" class="button">Read More</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <img src="B.png" alt="Wellness Programs">
+            <div class="section-content">
+                <h2>Wellness Programs</h2>
+                <p>Discover tailored wellness programs to meet your individual needs, from stress management to mental health support.</p>
+                <a href="consultations.html" class="button">Learn More</a>
+            </div>
+        </section>
+
+        <section class="section">
+            <img src="C.jpeg" alt="Product Recommendations">
+            <div class="section-content">
+                <h2>Product Recommendations</h2>
+                <p>Browse our selection of health products and supplements chosen to support your wellness journey.</p>
+                <a href="shop.html" class="button">Shop Now</a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-links">
+            <a href="disclaimer.html">Disclaimer</a>
+            <a href="privacy-policy.html">Privacy Policy</a>
+            <a href="terms-conditions.html">Terms & Conditions</a>
+        </div>
+        <p>&copy; 2024 Health and Wellness. All rights reserved.</p>
+    </footer>
+</body>
+</html>
